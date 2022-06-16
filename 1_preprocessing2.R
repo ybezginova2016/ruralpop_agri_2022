@@ -332,9 +332,6 @@ mach$region_name[(mach$region_name) == "Ненецкий автономный о
 mach$region_name[(mach$region_name) == "Тюменская область (без АО)"] <- "Тюменская область"
 mach$region_name[(mach$region_name) == "Тюменская область (кроме Ханты-Мансийского автономного округа-Югры и Ямало-Ненецкого автономного округа)"] <- "Тюменская область"
 
-# removing all NAs 
-# mach <- mach[complete.cases(mach),]
-
 # as numeric
 mach$"2014" <- as.numeric(mach$"2014")
 mach$"2015" <- as.numeric(mach$"2015")
