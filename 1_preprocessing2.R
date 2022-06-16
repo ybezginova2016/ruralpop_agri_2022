@@ -48,9 +48,6 @@ rural$region_name[(rural$region_name) == "г.Москва"] <- "Москва"
 rural$region_name[(rural$region_name) == "г.Санкт-Петербург"] <- "Санкт-Петербург"
 rural$region_name[(rural$region_name) == "Архангельская область без автономного округа"] <- "Архангельская область"
 
-# Убираем строки с NA 
-# rural <- rural[complete.cases(rural),]
-
 # replacing NAs
 rural$"2014"[is.na(rural$"2014")] <- mean(rural$"2014", na.rm = TRUE)
 rural$"2015"[is.na(rural$"2015")] <- mean(rural$"2015", na.rm = TRUE)
